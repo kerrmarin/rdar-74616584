@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '14.4'
+platform :ios, '14.0'
 
 target 'AppleRepro_Example' do
   pod 'AppleRepro', :path => '../'

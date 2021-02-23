@@ -16,7 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "14.4"
+    "ios": "14.0"
   },
   "source_files": "AppleRepro/Classes/**/*"
 }
