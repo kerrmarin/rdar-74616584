@@ -1,29 +1,15 @@
 # AppleRepro
 
-[![CI Status](https://img.shields.io/travis/kerrmarin/AppleRepro.svg?style=flat)](https://travis-ci.org/kerrmarin/AppleRepro)
-[![Version](https://img.shields.io/cocoapods/v/AppleRepro.svg?style=flat)](https://cocoapods.org/pods/AppleRepro)
-[![License](https://img.shields.io/cocoapods/l/AppleRepro.svg?style=flat)](https://cocoapods.org/pods/AppleRepro)
-[![Platform](https://img.shields.io/cocoapods/p/AppleRepro.svg?style=flat)](https://cocoapods.org/pods/AppleRepro)
+To reproduce:
 
-## Example
+- First verify the app compiles as-is (tested on Xcode Version 12.4 (12D4e))
+- Edit the `AppleRepro-Example` scheme's Run build configuration to `Release`
+- Try to compile, and receive:
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-AppleRepro is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'AppleRepro'
 ```
-
-## Author
-
-kerrmarin, kerr@kerrmarin.com
-
-## License
-
-AppleRepro is available under the MIT license. See the LICENSE file for more info.
+Undefined symbols for architecture x86_64:
+  "nominal type descriptor for AppleRepro.InternalView", referenced from:
+      _symbolic _____y_____y_____GG 7SwiftUI19UIHostingControllerC 10AppleRepro10ParentViewV AD08InternalH0V in ViewController.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+```
