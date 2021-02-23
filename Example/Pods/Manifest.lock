@@ -1,0 +1,16 @@
+PODS:
+  - AppleRepro (0.1.0)
+
+DEPENDENCIES:
+  - AppleRepro (from `../`)
+
+EXTERNAL SOURCES:
+  AppleRepro:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AppleRepro: 8ac8cdf91cd1b8083ad659380c77561194c75747
+
+PODFILE CHECKSUM: db17e4568c53ce8c40040d2f18e8ec277448aed9
+
+COCOAPODS: 1.10.1

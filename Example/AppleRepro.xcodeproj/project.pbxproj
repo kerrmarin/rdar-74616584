@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		02E13B68CD9F60AA57E0A099 /* Pods_AppleRepro_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleRepro_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1319AE891A887CF3BAC805C1 /* Pods-AppleRepro_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleRepro_Example.release.xcconfig"; path = "Target Support Files/Pods-AppleRepro_Example/Pods-AppleRepro_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4CE01671044DE22B3D0C4981 /* AppleRepro.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AppleRepro.podspec; path = ../AppleRepro.podspec; sourceTree = "<group>"; };
+		4CE01671044DE22B3D0C4981 /* AppleRepro.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AppleRepro.podspec; path = ../AppleRepro.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AppleRepro_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleRepro_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		8F3FDBB919CABCAE677EC07D /* Pods-AppleRepro_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleRepro_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AppleRepro_Tests/Pods-AppleRepro_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		943A934235240205280B47EE /* Pods-AppleRepro_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleRepro_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppleRepro_Example/Pods-AppleRepro_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9B76BC3B637DD119A1621C56 /* Pods-AppleRepro_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppleRepro_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppleRepro_Tests/Pods-AppleRepro_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ADAF1F40EE0FB7D67DAC1D47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		BD6E19D23F275434212D4F3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		ADAF1F40EE0FB7D67DAC1D47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BD6E19D23F275434212D4F3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C8B7FCC195A5083E51977263 /* Pods_AppleRepro_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppleRepro_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				8F3FDBB919CABCAE677EC07D /* Pods-AppleRepro_Tests.debug.xcconfig */,
 				9B76BC3B637DD119A1621C56 /* Pods-AppleRepro_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -419,7 +419,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +465,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -479,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleRepro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -494,6 +495,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppleRepro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

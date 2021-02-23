@@ -1,0 +1,22 @@
+{
+  "name": "AppleRepro",
+  "version": "0.1.0",
+  "summary": "A short description of AppleRepro.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kerrmarin/AppleRepro",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kerrmarin": "kerr@kerrmarin.com"
+  },
+  "source": {
+    "git": "https://github.com/kerrmarin/AppleRepro.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "14.4"
+  },
+  "source_files": "AppleRepro/Classes/**/*"
+}

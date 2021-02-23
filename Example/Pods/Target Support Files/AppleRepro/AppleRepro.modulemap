@@ -1,0 +1,6 @@
+framework module AppleRepro {
+  umbrella header "AppleRepro-umbrella.h"
+
+  export *
+  module * { export * }
+}

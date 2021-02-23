@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import SwiftUI
+
+import AppleRepro
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Compiles in debug, doesn't compile in release
+        // To reproduce, change the scheme's Run Build Configuration to `Release`
+        let view = ParentView()
+        let hosting = UIHostingController(rootView: view)
+        self.view.addSubview(hosting.view)
     }
-
 }
 
