@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build
-      run: xcodebuild -workspace AppleRepro.xcworkspace -scheme AppleRepro-Example -configuration Release -sdk iphonesimulator build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      run: xcodebuild -workspace Example/AppleRepro.xcworkspace -scheme AppleRepro-Example -configuration Release -sdk iphonesimulator build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
