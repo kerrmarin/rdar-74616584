@@ -1,5 +1,7 @@
 # AppleRepro
 
+Update 02/02/22:
+
 To reproduce:
 
 - First verify the app compiles as-is (tested on Xcode Version 12.4 (12D4e))
