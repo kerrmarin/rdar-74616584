@@ -1,6 +1,8 @@
 # AppleRepro
 
-Update 02/02/22: Still reproduceable
+## Update 21/10/22: Seems fixed
+
+~Update 02/02/22: Still reproduceable~
 
 To reproduce:
 
